@@ -1,3 +1,4 @@
+//Top up Balance
 package com.example.jomride;
 
 import static android.content.ContentValues.TAG;
@@ -76,6 +77,7 @@ public class TopUpActivity extends AppCompatActivity {
     private DatabaseReference HuserReference;
     private DatabaseReference historyreference;
 
+    //Payment gateway data
     private String Publishablekey="pk_test_51OIUjYL3FJxKGQiObTXCvka3SMOwPHbnyYcoGg9ATr0W4rx0KXcgygNrwmmAWKj7sxY0ZAxB6uqvmdX8gj70UZIs0050vVLyUs";
     private String secretkey="sk_test_51OIUjYL3FJxKGQiOH1282OddiIKRFCoz458rlDHIpnYrUbMYIx5zuhR1TJKjxa9EXgGusnZxGs4GIZ72nx4A3Kkp00MYkgTGEG";
     private String customerId;
@@ -93,8 +95,8 @@ public class TopUpActivity extends AppCompatActivity {
         readWalletData();
         //Get for altering balance
         //Get authentication+current id
-        //   mAuth=FirebaseAuth.getInstance();
-        //   userId=mAuth.getCurrentUser().getUid();
+           mAuth=FirebaseAuth.getInstance();
+           userId=mAuth.getCurrentUser().getUid();
         database = FirebaseDatabase.getInstance();
 
         //input amount to top up
@@ -131,11 +133,6 @@ public class TopUpActivity extends AppCompatActivity {
         Btntopup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                String rawamount=ETamount.getText().toString();
-//                if(!rawamount.isEmpty()){amount=Double.parseDouble(rawamount);
-//                 amount=Double.parseDouble(rawamount);
-//                 TPamount=String.format("%d",(int)amount*100);
-//                 getCustomerId();
                 double currentCredit=Double.parseDouble(walletdata.getBalance());
                 double limit=Math.max(10.0,20.0-currentCredit);
                 if(amount>=limit)
@@ -167,6 +164,7 @@ public class TopUpActivity extends AppCompatActivity {
         });
     }
 
+    //Display the payment result
     private void onPaymentResult(PaymentSheetResult paymentSheetResult) {
         if (paymentSheetResult instanceof PaymentSheetResult.Canceled) {
             Log.d(TAG, "Canceled");
@@ -181,6 +179,7 @@ public class TopUpActivity extends AppCompatActivity {
         }
     }
 
+    //Get customer id
     private void getCustomerId()
     {
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
@@ -215,6 +214,8 @@ public class TopUpActivity extends AppCompatActivity {
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
     }
+
+    //Get epherical key
     private void getEphericlKey(String customerId) {
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
                 "https://api.stripe.com/v1/ephemeral_keys",
@@ -259,6 +260,7 @@ public class TopUpActivity extends AppCompatActivity {
 
     }
 
+    //get client secret
     private void getClientSecret(String customerId, String ephericalKey) {
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
                 "https://api.stripe.com/v1/payment_intents?amount="+TPamount,
@@ -302,6 +304,7 @@ public class TopUpActivity extends AppCompatActivity {
         requestQueue.add(stringRequest);
     }
 
+    //Call payment intent
     private void PaymentFlow() {
     if(customerId!=null&&EphericalKey!=null&&clientSecret!=null){
         customerConfig=new PaymentSheet.CustomerConfiguration(customerId,EphericalKey);
@@ -315,41 +318,17 @@ public class TopUpActivity extends AppCompatActivity {
     }
     }
 
-
-//    private void checkAmount(double amount)
-//    {
-//        if(amount>=10.0)
-//        {
-//            topupbalance(amount);
-//        }
-//        else{
-//            ETamount.getText().clear();
-//            Toast toast = Toast.makeText(TopUpActivity.this ," Only can top up value more than \nRM 10.00", Toast.LENGTH_SHORT);
-//            toast.show();
-//        }
-//    }
-////later need to move to another class this just temporary
-//    private void topupbalance(double amount)
-//    {
-//        String tbalance=String.format("%.2f",getTotalBalance(amount));
-//        paymentFlow();
-//        walletdata=new WalletData(tbalance,walletdata.getPoint());
-//        walletRef.setValue(walletdata);
-//        addUsageData(amount);
-//
-//    }
-
-
+    //add up to balance
     private double getTotalBalance(double amount)
     {
         return Double.parseDouble(walletdata.getBalance())+amount;
     }
-
+//read the wallet data
     private void readWalletData()
     {
         //Get authentication+current id
-        //   mAuth=FirebaseAuth.getInstance();
-        //   userId=mAuth.getCurrentUser().getUid()
+           mAuth=FirebaseAuth.getInstance();
+           userId=mAuth.getCurrentUser().getUid()
         database= FirebaseDatabase.getInstance();
         walletRef=database.getReference().child("Wallet").child(userId);
         walletRef.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -366,6 +345,7 @@ public class TopUpActivity extends AppCompatActivity {
                                                  });
     }
 
+    //Transaction History
     private void addUsageData(double amount)
     {
         historyreference=database.getReference().child("History").child("transaction");
