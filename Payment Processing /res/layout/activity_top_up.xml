@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TopUpActivity">
+
+    <TextView
+        android:id="@+id/TV_walletReminder3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="124dp"
+        android:fontFamily="@font/inter"
+        android:text="The lowest amount allowed is RM10.00"
+        android:textColor="@color/Red"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/BtnBack_WalletTopUpHome"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="132dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="150dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/inter"
+        android:text="Back"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:icon="@drawable/ic_back"
+        app:iconGravity="textStart"
+        app:iconPadding="5dp"
+        app:iconSize="20dp"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TV_title_topup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="100dp"
+        android:drawableLeft="@drawable/ic_wallet"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/inter"
+        android:text="Top Up"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <TextView
+        android:id="@+id/TV_enteramout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/enter_amount_topup"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BtnTopUp"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/top_up_button"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_Comfirm" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="317dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/popup"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TV_RM"
+            android:layout_width="39dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/inter"
+            android:text="@string/rm_topup"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/ETND_amount"
+            android:layout_width="228dp"
+            android:layout_height="50dp"
+
+            android:ems="10"
+            android:fontFamily="@font/inter"
+            android:hint="X.XX"
+            android:inputType="numberDecimal"
+            android:textColor="@color/Gray"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Btn_Comfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="133dp"
+        android:fontFamily="@font/inter"
+        android:text="CONFIRM"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_walletReminder3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
