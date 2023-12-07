@@ -1,6 +1,6 @@
 plugins {
     id("com.android.application")
-    id("com.google.gms.google-services")
+    id("com.google.gms.google-services") //add this
 }
 
 android {
@@ -43,20 +43,22 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.navigation:navigation-fragment:2.7.5")
     implementation("androidx.navigation:navigation-ui:2.7.5")
-    implementation("com.google.firebase:firebase-auth:22.3.0")
-    implementation("com.google.firebase:firebase-database:20.3.0")
-    testImplementation("junit:junit:4.13.2")
+    implementation("com.google.firebase:firebase-auth:22.3.0") //add this
+    implementation("com.google.firebase:firebase-database:20.3.0") //add this
+    testImplementation("junit:junit:4.13.2") 
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
     //Add for LocaldateTime bcs we are using API 21 and it only supports API26
     // For AGP 7.4+
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.3")
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.3")//add this
+
 //    implementation("com.androidx.support:design:28.0.0")
 //https://mvnrepository.com/artifact/com.stripe/stripe-java
-    implementation ("com.stripe:stripe-java:24.0.0")
-    implementation("com.stripe:stripe-android:17.2.0")
-    implementation("com.android.volley:volley:1.2.1")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
+    implementation ("com.stripe:stripe-java:24.0.0") //add this
+    implementation("com.stripe:stripe-android:17.2.0")//add this
+    implementation("com.android.volley:volley:1.2.1")//add this
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")//add this
     implementation ("com.github.kittinunf.fuel:fuel:2.3.1")
 
 }
