@@ -1,3 +1,4 @@
+//This activity just to show how the receipt navigate and access wallet
 package com.example.jomride;
 
 import androidx.appcompat.app.AppCompatActivity;
