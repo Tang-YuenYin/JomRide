@@ -179,7 +179,7 @@ public class HistoryActivity extends AppCompatActivity {
                     HistoryData dt=snapshot.getValue(HistoryData.class);
                     if (dt != null) {
                         obj = new HistoryObject(tkey, dt);
-                        transactionlist.add(obj);
+                        transactionlist.add(0,obj);
                         Log.w(TAG, dt.getDescription());
                         //adapter.addItem(obj);
                         adapter.notifyDataSetChanged();
