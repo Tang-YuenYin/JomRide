@@ -1,3 +1,4 @@
+//Wallet activity
 package com.example.jomride;
 
 import static android.content.ContentValues.TAG;
@@ -81,8 +82,8 @@ public class WalletActivity extends AppCompatActivity {
     private void readWalletData()
     {
         //Get authentication+current id
-        //   mAuth=FirebaseAuth.getInstance();
-        //   userId=mAuth.getCurrentUser().getUid()
+           mAuth=FirebaseAuth.getInstance();
+           userId=mAuth.getCurrentUser().getUid()
         database= FirebaseDatabase.getInstance();
         walletRef=database.getReference().child("Wallet").child(userId);
         walletRef.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -101,42 +102,5 @@ public class WalletActivity extends AppCompatActivity {
             }
         });
     }
-//    private void readData()
-//    {
 
-//        //data=new ArrayList<>();
-//        DatabaseReference walletRef=database.getReference().child("Wallet").child(userId);
-//        walletRef.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-//               walletdata=dataSnapshot.getValue(WalletData.class);
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {}
-//        });
-//
-//        balance.setText(walletdata.getBalance());
-//        point.setText(walletdata.getPoint());
-//    }
-
-    //        ValueEventListener eventlistener = new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-//                // Get Post object and use the values to update the UI
-//                walletData = dataSnapshot.getValue(WalletData.class);
-//                if (walletData != null) {
-//                    balance.setText(walletData.getBalance());
-//                    point.setText(walletData.getPoint());
-//                }
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError databaseError) {
-//                // Getting Post failed, log a message
-//                Log.w(TAG, "loadPost:onCancelled", databaseError.toException());
-//            }
-//        };
-//
-//      walletRef.addValueEventListener(eventlistener);
 }
