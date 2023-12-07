@@ -80,8 +80,8 @@ public class DressClickActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dress_click);
 
         //Get authentication+current id
-        //   mAuth=FirebaseAuth.getInstance();
-        //   userId=mAuth.getCurrentUser().getUid();
+           mAuth=FirebaseAuth.getInstance();
+           userId=mAuth.getCurrentUser().getUid();
 
         //Initialize database
         database=FirebaseDatabase.getInstance();
