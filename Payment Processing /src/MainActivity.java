@@ -1,3 +1,4 @@
+//This should be the end ride activity
 package com.example.jomride;
 
 import static android.content.ContentValues.TAG;
@@ -86,8 +87,8 @@ public class MainActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_main);
 
         //Get authentication+current id
-     //   mAuth=FirebaseAuth.getInstance();
-     //   userId=mAuth.getCurrentUser().getUid();
+        mAuth=FirebaseAuth.getInstance();
+        userId=mAuth.getCurrentUser().getUid();
 
         //Initialize database
         database=FirebaseDatabase.getInstance();
@@ -98,6 +99,7 @@ public class MainActivity extends AppCompatActivity  {
         //need put this after registration is done
 //        WalletData walletdata=new WalletData("0.00",0);
 //        walletReference.setValue(walletdata);
+        
         readWalletData();
         //call button to bring to end ride receipt
         Button BtnEndRide=findViewById(R.id.Btn_EndRide);
@@ -133,6 +135,7 @@ public class MainActivity extends AppCompatActivity  {
             }
         });
 
+        //Test shop
         Button dressclip=findViewById(R.id.Btn_dressclip);
         dressclip.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -147,7 +150,7 @@ public class MainActivity extends AppCompatActivity  {
     }
 
 
-
+//record ride for receipt 
     private void recordRide(RideData data) {
         rideHistoryRef=database.getReference().child("History").child("ride");
         RuserReference=database.getReference().child("User").child(userId).child("ride");
@@ -208,6 +211,8 @@ public class MainActivity extends AppCompatActivity  {
 
         return point;
     }
+
+    //deduct balance from wallet
     private void updateWalletData(double total){
         if(walletdata!=null) {
             balance = Double.parseDouble(walletdata.getBalance()) - total;
@@ -227,6 +232,8 @@ public class MainActivity extends AppCompatActivity  {
 
 
     }
+
+    //for transaction history
     private void addUsageData(double total)
     {
         historyreference=database.getReference().child("History").child("transaction");
@@ -240,6 +247,8 @@ public class MainActivity extends AppCompatActivity  {
         HuserReference.child(usageHistory_id).setValue(true);
         historyreference.child(usageHistory_id).setValue(wud);
     }
+
+    
     private void readWalletData()
     {
         walletReference.addListenerForSingleValueEvent(new ValueEventListener() {
