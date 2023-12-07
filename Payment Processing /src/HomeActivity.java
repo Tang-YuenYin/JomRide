@@ -15,6 +15,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        //Way to the wallet home
         Button BtnWallet=findViewById(R.id.BtnWallet);
         BtnWallet.setOnClickListener(new View.OnClickListener() {
             @Override
