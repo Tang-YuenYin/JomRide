@@ -124,14 +124,6 @@ public class MainActivity extends AppCompatActivity  {
                 //Upload data into database
                 recordRide(ridedata);
                 addUsageData(total);
-                //https://www.geeksforgeeks.org/android-pass-parcelable-object-from-one-activity-to-another-using-putextra/
-                //https://stackoverflow.com/questions/2736389/how-to-pass-an-object-from-one-activity-to-another-on-android
-                //Move from this activity to another and pass arguments
-//                Intent intent = new Intent(MainActivity.this,ReceiptActivity.class);
-//                intent.putExtra("rideData",ridedata);
-//                startActivity(intent);
-//                finish();
-
             }
         });
 
@@ -255,10 +247,6 @@ public class MainActivity extends AppCompatActivity  {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 walletdata = dataSnapshot.getValue(WalletData.class);
-//                if (walletdata != null) {
-//                    balance=Double.parseDouble(walletdata.getBalance())-getTotal(duration,rate);
-//                    Tpoint=walletdata.getPoint()+getPoint(getTotal(duration,rate));
-//                }
             }
 
             @Override
@@ -267,67 +255,8 @@ public class MainActivity extends AppCompatActivity  {
             }
         });
     }
-//    private void readWalletData(double total)
-//    {
-//        CountDownLatch latch = new CountDownLatch(1);
-//        walletReference.addListenerForSingleValueEvent(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-//                walletdata = dataSnapshot.getValue(WalletData.class);
-//                if (walletdata)
-//
-//            }
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//                Log.w(TAG, "loadPost:onCancelled", error.toException());
-//
-//            }
-//        });
-//    }
+
 
 }
 
-//OnCLick for PopUp
-//                // Initialize the dismissListener
-//                //to trigger the action to be done after the popup is dismissed
-//                PopupDismissListener dismissListener = new PopupDismissListener() {
-//                    @Override
-//                    public void onPopupDismissed() {
-//                        startNewActivity();
-//                    }
-//                };
-//                PopUpClass ridereceipt=new PopUpClass(data,dismissListener);
-////                PopUpClass ridereceipt=new PopUpClass(data);
-//                ridereceipt.showPopupWindow(view);
 
-//to store all ride history in an Array List to easily pass to the popUp window
-//It is stored in this sequence
-//UserId,DateTime,total,point,transport type, rate, duration,distance
-//    private ArrayList<String> saveRideHistory(String transportType,int point,double dist, double duration, String start, String end,double rate){
-//        ArrayList<String>rideHistory=new ArrayList<>();
-//       // rideHistory.add(getUserId(userId));//user id; need change this later
-//        rideHistory.add(setDateTime());//date
-//        rideHistory.add(String.format("RM %.2f",getTotal(duration,rate)));//total
-//        rideHistory.add("+ "+getPoint(getTotal(duration,rate))+" pts ");//point can change point variable to a method to calculate points
-//        rideHistory.add(getransportType(transport));//transport type
-//        rideHistory.add(String.format("RM %.2f /min",getRate(rate)));//rate
-//        rideHistory.add(String.format("%.2f min",getDuration(duration)));//duratiom
-//        rideHistory.add(String.format("%.2f km",getDistance(distance)));//distance
-//        rideHistory.add(getStartPoint(start));//start
-//        rideHistory.add(getEndPoint(end));//end
-//        return rideHistory;
-//    }
-
-
-//Create Has Map to store ride data
-//        HashMap <String,Object>ridemap=new HashMap<>();
-//        ridemap.put("datetime",data.get(0));
-//        ridemap.put("total",data.get(1));
-//        ridemap.put("point",data.get(2));
-//        ridemap.put("transporttype",data.get(3));
-//        ridemap.put("rate",data.get(4));
-//        ridemap.put("duration",data.get(5));
-//        ridemap.put("distance",data.get(6));
-//        ridemap.put("start",data.get(7));
-//        ridemap.put("end",data.get(8));
-//for this need use updateChildren(ridemap);
