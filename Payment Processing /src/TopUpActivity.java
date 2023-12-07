@@ -110,6 +110,14 @@ public class TopUpActivity extends AppCompatActivity {
             onPaymentResult(result);
         });
 
+          ETamount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ETamount.getText().clear();
+                Btntopup.setEnabled(false);;
+            }
+        });
+
         BtnComfirm.setOnClickListener(new View.OnClickListener() {
 
                                           @Override
