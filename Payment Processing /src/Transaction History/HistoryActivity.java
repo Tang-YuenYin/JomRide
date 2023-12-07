@@ -63,8 +63,8 @@ public class HistoryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_history);
 
         //Get authentication+current id
-        //   mAuth=FirebaseAuth.getInstance();
-        //   userId=mAuth.getCurrentUser().getUid();
+          mAuth=FirebaseAuth.getInstance();
+          userId=mAuth.getCurrentUser().getUid();
 
         //Initialize database
         database=FirebaseDatabase.getInstance();
@@ -96,6 +96,8 @@ public class HistoryActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        //Show calender
         Btncalender.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -212,30 +214,4 @@ public class HistoryActivity extends AppCompatActivity {
         }
     }
 
-    //        //Set Navigation
-//        NavHostFragment host= (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.NHFMain);
-//        navController = host.getNavController();
-//        //setup navigation bar
-//        setupBottomNavMenu(navController);
-//    //link selected option
-//    public boolean onOptionsItemSelected(MenuItem item)
-//    {
-//        try{
-//
-//            findNavController(this,R.id.NHFMain).navigate(item.getItemId());
-//            return true;
-//        }
-//        catch(Exception e)
-//        {
-//            return super.onOptionsItemSelected(item);
-//        }
-//    }
-//
-//    private void setupBottomNavMenu(NavController navController)
-//    {
-//        BottomNavigationView bottomNav= findViewById(R.id.bottomNavigationView);
-//        NavigationUI.setupWithNavController(bottomNav,navController);
-//        bottomNav.setOnItemSelectedListener(this::onOptionsItemSelected);
-//
-//    }
 }
