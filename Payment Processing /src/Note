@@ -1,0 +1,31 @@
+Main Activity
+//this activity should be from the end ride activity 
+//In this activity I have declared the fare calculation and saved all the ride data for receipt display next 
+//There is a point method there can implement the functions for point calculation there.
+//So I think after click on the continue button. It will run what it should run and go to the recipt activity
+
+REceipt Activity
+//Display the receipt
+//CLick ok then will go back home page
+
+Wallet Home
+//Show balance and point
+//Allow top up
+//Button to transaction History
+
+Top Up Activity
+//Allow top up
+//direct to payment gateway
+
+Transaction History Activity
+//Display recycler view
+//Filter with date
+//Display first 30 records of the day 
+//click on the item will have a pop up
+
+//dress click activity
+can implement the code for the shop
+
+Manifest file 
+//need add
+//
