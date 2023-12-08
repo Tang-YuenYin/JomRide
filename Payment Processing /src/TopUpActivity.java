@@ -149,7 +149,6 @@ public class TopUpActivity extends AppCompatActivity {
                     String tbalance=String.format("%.2f",getTotalBalance(amount));
                     walletdata=new WalletData(tbalance,walletdata.getPoint());
                     walletRef.setValue(walletdata);
-                    addUsageData(amount);
                 }
                 else{
                     ETamount.getText().clear();
@@ -173,9 +172,10 @@ public class TopUpActivity extends AppCompatActivity {
     }
 
     //Display the payment result
-    private void onPaymentResult(PaymentSheetResult paymentSheetResult) {
+ private void onPaymentResult(PaymentSheetResult paymentSheetResult) {
         if (paymentSheetResult instanceof PaymentSheetResult.Canceled) {
             Log.d(TAG, "Canceled");
+            Btntopup.setEnabled(false);
             Toast.makeText(this,"Cancelled",Toast.LENGTH_SHORT).show();
         } else if (paymentSheetResult instanceof PaymentSheetResult.Failed) {
             Log.e(TAG, "Got error: ", ((PaymentSheetResult.Failed) paymentSheetResult).getError());
@@ -183,9 +183,12 @@ public class TopUpActivity extends AppCompatActivity {
         } else if (paymentSheetResult instanceof PaymentSheetResult.Completed) {
             // Display for example, an order confirmation screen
             Log.d(TAG, "Completed");
-            Toast.makeText(this,"Completed",Toast.LENGTH_SHORT).show();
+            Btntopup.setEnabled(false);
+            Toast.makeText(this,"Top Up Completed",Toast.LENGTH_SHORT).show();
+            addUsageData(amount);
+            ETamount.getText().clear();
+            Btntopup.setEnabled(false);
         }
-    }
 
     //Get customer id
     private void getCustomerId()
