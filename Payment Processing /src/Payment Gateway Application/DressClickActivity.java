@@ -118,7 +118,9 @@ public class DressClickActivity extends AppCompatActivity {
         } else if (paymentSheetResult instanceof PaymentSheetResult.Completed) {
             // Display for example, an order confirmation screen
             Log.d(TAG, "Completed");
-            Toast.makeText(this,"Completed",Toast.LENGTH_SHORT).show();
+            //Can add pop up here 
+            Toast.makeText(this,"Payment Completed",Toast.LENGTH_SHORT).show();
+            addUsageData(total);
         }
     }
 
