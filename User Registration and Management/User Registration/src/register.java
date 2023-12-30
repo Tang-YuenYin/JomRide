@@ -7,6 +7,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -94,7 +95,7 @@ public class register extends AppCompatActivity {
                 map.put("id" , mAuth.getCurrentUser().getUid());
                 map.put("phone" , phone);
 
-                reference.child("Users").child(name).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
+                reference.child("users").child(mAuth.getCurrentUser().getUid()).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()){
@@ -112,6 +113,7 @@ public class register extends AppCompatActivity {
             @Override
             public void onFailure(@NonNull Exception e) {
                 Toast.makeText(register.this, "Registration Unsuccessful. Please try again.", Toast.LENGTH_SHORT).show();
+                Log.e("Registration Error", e.getMessage()); // Log the error for debugging
                 loadingBar.dismiss();
             }
         });
