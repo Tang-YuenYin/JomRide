@@ -1,0 +1,44 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".MainActivity">
+    <TextView android:id="@+id/TVEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="304dp" android:foregroundTint="#FFFFFF" android:text="Email: joannelimzixuan@gmail.com" android:textColor="@color/white" android:textSize="16sp" android:textStyle="bold" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.496" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView android:id="@+id/TVphone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="340dp" android:text="Phone: +6018-9618568" android:textColor="@color/white" android:textSize="16sp" android:textStyle="bold" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/TVIG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lzx_1228"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView android:id="@+id/TVTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="108dp" android:layout_marginEnd="104dp" android:text="Developer" android:textColor="@color/white" android:textSize="24sp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView android:id="@+id/TVName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="52dp" android:text="Joanne" android:textColor="@color/white" android:textSize="48sp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.396" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/BtnFeedbackPg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="205dp"
+        android:text="Feedback page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVTitle" />
+
+    <Button
+        android:id="@+id/BtnFeedbackListpg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="151dp"
+        android:text="FeedbackList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnFeedbackPg" />
+</androidx.constraintlayout.widget.ConstraintLayout>
