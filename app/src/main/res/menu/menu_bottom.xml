@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/DestWalletHistory"
+        android:icon="@drawable/ic_wallet"
+        android:title="Wallet" />
+    <item
+        android:id="@+id/DestRideHistory"
+        android:icon="@drawable/ic_popup_transport"
+        android:title="Ride" />
+    <item
+        android:id="@+id/DestOrderHistory"
+        android:icon="@drawable/ic_order"
+        android:title="Order" />
+</menu>
