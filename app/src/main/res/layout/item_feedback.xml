@@ -2,19 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#70FFFFFF"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="5dp">
 
-    <TextView
-        android:id="@+id/textViewRating"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rating: " />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/popup"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textViewFeedbackText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Feedback: " />
+        <TextView
+            android:id="@+id/textViewRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="Rating: "
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textViewFeedbackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="Feedback: "
+            android:textColor="@color/black" />
+    </LinearLayout>
 
 </LinearLayout>
