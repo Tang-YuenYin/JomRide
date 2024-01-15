@@ -6,19 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".TopUpActivity">
 
-    <ImageView
-        android:id="@+id/background3"
-        android:layout_width="413dp"
-        android:layout_height="728dp"
-        android:alpha="0.3"
-        android:background="#ffffff"
-        android:scaleType="fitCenter"
-        android:src="@drawable/backgroundjomride"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageButton
         android:id="@+id/BtnBack_WalletTopUpHome"
         android:layout_width="56dp"
@@ -36,15 +23,14 @@
         android:id="@+id/TV_walletReminder3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="384dp"
-        android:background="#FFFFFF"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="124dp"
         android:fontFamily="@font/inter"
-        android:text=" The lowest amount allowed is RM10.00 "
+        android:text="The lowest amount allowed is RM10.00"
         android:textColor="@color/Red"
         android:textSize="13sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
@@ -75,10 +61,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="176dp"
-        android:background="#FFFFFF"
         android:fontFamily="@font/inter"
         android:text="@string/enter_amount_topup"
-        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.245"
@@ -90,16 +74,13 @@
         android:layout_width="142dp"
         android:layout_height="50dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="50dp"
-        android:background="@drawable/custom_button2"
         android:fontFamily="@font/inter"
         android:text="@string/top_up_button"
-        android:textColor="@color/colorWhite"
         android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Btn_Comfirm" />
 
@@ -139,23 +120,16 @@
 
     <Button
         android:id="@+id/Btn_Comfirm"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="141dp"
-        android:layout_height="49dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="133dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="133dp"
-        android:background="@drawable/custom_button2"
         android:fontFamily="@font/inter"
-        android:outlineAmbientShadowColor="#918D8D"
-        android:outlineSpotShadowColor="#978C8C"
-        android:shadowColor="#8B898F"
         android:text="CONFIRM"
-        android:textColor="@color/white"
         android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/TV_walletReminder3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

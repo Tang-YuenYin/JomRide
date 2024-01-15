@@ -4,15 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#175E5F"
     tools:context=".ShopActivity">
-
-    <View
-        android:id="@+id/background"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#175E5F"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/back"
@@ -25,7 +18,6 @@
         android:src="@drawable/back_btn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 
     <ImageView
@@ -44,7 +36,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="64dp"
         android:text="Shop"
-        android:textColor="#000000"
+        android:textColor="#ffffff"
         android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/shop"
         app:layout_constraintTop_toTopOf="parent" />

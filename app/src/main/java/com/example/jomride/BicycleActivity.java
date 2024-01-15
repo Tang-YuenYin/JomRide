@@ -20,7 +20,6 @@ public class BicycleActivity extends AppCompatActivity {
     private Button review;
     private Dialog mDialog;
     private ImageView Back;
-
     private Intent countingIntent;
     private Intent feedbackIntent;
 

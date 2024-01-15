@@ -22,7 +22,6 @@ public class FeedbackActivity extends AppCompatActivity {
     private DatabaseReference feedbackRef;
     // Load the Firebase credentials and initialize the app
 //    String bikecode="B001";
-    String bike_code;
     FileInputStream serviceAccount;
 
 //    {
@@ -52,8 +51,7 @@ public class FeedbackActivity extends AppCompatActivity {
         EditText ETFeedback = findViewById(R.id.ETFeedback);//needed if want to collect the feedback later
         Button BtnFeedback = findViewById(R.id.BtnFeedback);
         Button BtnSkip=findViewById(R.id.BtnSkip);
-        bike_code= getIntent().getStringExtra("bikeCode");
-        //Toast.makeText(this,bike_code,Toast.LENGTH_SHORT).show();
+        String bike_code= getIntent().getStringExtra("bikeCode");
         // Initialize Firebase Database reference
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         feedbackRef = database.getReference().child("feedback").child(bike_code);

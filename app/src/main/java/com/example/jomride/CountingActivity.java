@@ -93,13 +93,12 @@ public class CountingActivity extends AppCompatActivity {
         btnyes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                startActivity(endActivity);
+                startActivity(endActivity);
                 mDialog.dismiss();
                 stopTimer();
                 String vehicleType = getIntent().getStringExtra("VehicleType");
                 double pricePerMinute = getPricePerMinute(vehicleType);
                 showPriceAndVehicle(pricePerMinute);
-                startActivity(endActivity);
 
 
             }
