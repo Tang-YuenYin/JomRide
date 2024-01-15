@@ -2,11 +2,48 @@
     <string name="app_name">RewardMainPage</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
+    <string name="title_activity_driver_map">DriverMapActivity</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome!"</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
+    <string name="popup_distance"> Distance:</string>
+    <string name="popup_transportation_type">Transportation type:</string>
+    <string name="popup_duration"> Duration:</string>
+    <string name="popup_startpoint">Start Point</string>
+    <string name="popup_endpoint">End Point</string>
+    <string name="popup_exitreceipt">OK</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="walltehistorybuttonlabel">Transaction\nHistory</string>
+    <string name="top_up_wallet">+ TOP UP</string>
+    <string name="current_balance_wallet">Current Balance :</string>
+    <string name="historylabel_wallet"><![CDATA[ History >]]></string>
+    <string name="reminder_wallet">Make sure wallet has at least RM 10.00 before each ride</string>
+    <string name="rm_topup">RM</string>
+    <string name="enter_amount_topup">Enter amount:</string>
+    <string name="top_up_button">TOP UP</string>
+    <string name="filter">date filter</string>
     <string name="login_failed">"Login failed"</string>
+    <string-array name="DestinationSlots">
+        <item>None</item>
+        <item>Dewan Tunku Cansellor</item>
+        <item>Kompleks Perdana Siswa</item>
+        <item>UM Library</item>
+        <item>UM Arena</item>
+        <item>Pusat Sukan</item>
+        <item>Bus Stop KK12</item>
+        <item>PASUM</item>
+        <item>UM Lake</item>
+        <item>UM Varsity Green</item>
+        <item>Bus Stop KK1</item>
+        <item>Bus Stop Faculty Engineering</item>
+        <item>UM Central</item>
+        <item>Bus Stop Faculty Science</item>
+        <item>Bus Stop KK4</item>
+        <item>Bus Stop FSKTM</item>
+        <item>Bus Stop KK10</item>
+    </string-array>
 </resources>

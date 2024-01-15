@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LL_ridepopup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/TraslucentGray"
+>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="507dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="131dp"
+        android:layout_marginBottom="125dp"
+        android:background="@drawable/popup"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TV_Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:includeFontPadding="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="1/1/2023 07:00"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TV_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:includeFontPadding="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="RM 0.00"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TV_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:includeFontPadding="true"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp"
+            android:text="+ 0 pts"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/Line1"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/verDarkCyan"
+            android:paddingTop="5dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="30dp">
+
+                <TextView
+                    android:id="@+id/TV_title_transportation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_popup_transport"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/inter"
+                    android:includeFontPadding="true"
+                    android:paddingTop="5dp"
+                    android:text="@string/popup_transportation_type"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TV_input_tranport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:includeFontPadding="true"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="12dp"
+                    android:text="Transportation style"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/TV_title_Rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_popup_duration"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/inter"
+                    android:includeFontPadding="true"
+                    android:text="Rate"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TV_input_rate"
+                    android:layout_width="302dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:includeFontPadding="true"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="12dp"
+                    android:text="RM 0.00 /min"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/TV_title_duration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_popup_duration"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/inter"
+                    android:includeFontPadding="true"
+                    android:text="@string/popup_duration"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TV_input_duration"
+                    android:layout_width="302dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:includeFontPadding="true"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="12dp"
+                    android:text="00:00:00"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/TV_title_dist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_popup_distance"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/inter"
+                    android:text="@string/popup_distance"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TV_input_dist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:includeFontPadding="true"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="12dp"
+                    android:text="0 km"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/TV_title_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_popup_flag"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/inter"
+                    android:text="@string/popup_startpoint"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TV_input_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:includeFontPadding="true"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="12dp"
+                    android:text="Location"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/TV_title_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_popup_flag"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/inter"
+                    android:text="@string/popup_endpoint"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TV_input_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:includeFontPadding="true"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="12dp"
+                    android:text="Location"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/verDarkCyan"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:id="@+id/Btn_Exit_receipt"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/popup_exitreceipt"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>
