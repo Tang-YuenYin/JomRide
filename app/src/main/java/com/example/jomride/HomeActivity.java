@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.navigation.ui.NavigationUI;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -34,13 +33,12 @@ import com.google.firebase.database.ValueEventListener;
 public class HomeActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap myMap;
-    private MemberData membership;
     private DatabaseReference memberRef;
     private DatabaseReference databaseReference;
     private FirebaseAuth mAuth;
     private String userId;
-    private ImageButton BtnNotification;
     private DrawerLayout drawerLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +53,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
             databaseReference = FirebaseDatabase.getInstance().getReference("User").child(userId);
         }
 
+        //Button to bring the user to next page to select the pick up point
         Button WhereToGo = findViewById(R.id.WhereToGo);
         WhereToGo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,24 +63,23 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
         });
 
-
+        //Bottom Navigation Bar
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                if (item.getItemId() == R.id.DestHome) {
+                if (item.getItemId() == R.id.DestHome) { //Home Page
                     return true;
-                } else if (item.getItemId() == R.id.DestShop) {
-                    // Handle Shop click
+                } else if (item.getItemId() == R.id.DestShop) {  //Shop Page
                     startActivity(new Intent(HomeActivity.this, ShopActivity.class));
                     return true;
-                } else if (item.getItemId() == R.id.DestWallet) {
+                } else if (item.getItemId() == R.id.DestWallet) {  //Wallet Page
                     startActivity(new Intent(HomeActivity.this, WalletActivity.class));
                     return true;
-                } else if (item.getItemId() == R.id.DestOffer) {
+                } else if (item.getItemId() == R.id.DestOffer) {  //Offer Page
                     startActivity(new Intent(HomeActivity.this, RewardMainPage.class));
                     return true;
-                } else if (item.getItemId() == R.id.DestProfile) {
+                } else if (item.getItemId() == R.id.DestProfile) {  //Profile Page
                     startActivity(new Intent(HomeActivity.this, profilepage.class));
                     return true;
                 }
@@ -89,8 +87,9 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
         });
 
+        //Side Menu
         drawerLayout = findViewById(R.id.drawer_layout);
-        // Your button to open the drawer
+        // Menu button to open the drawer
         ImageButton menuButton = findViewById(R.id.menu);
         menuButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,6 +102,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
         mapFragment.getMapAsync(this);
     }
 
+    //call openDrawer method
     private void openDrawer() {
         if (!drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.openDrawer(GravityCompat.START);
@@ -110,19 +110,19 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
             sideNav.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                    if (item.getItemId() == R.id.DestHome) {
+                    if (item.getItemId() == R.id.DestHome) {  //Home Page
                         return true;
-                    } else if (item.getItemId() == R.id.DestShop) {
+                    } else if (item.getItemId() == R.id.DestShop) {  //Shop Page
                         // Handle Shop click
                         startActivity(new Intent(HomeActivity.this, ShopActivity.class));
                         return true;
-                    } else if (item.getItemId() == R.id.DestWallet) {
+                    } else if (item.getItemId() == R.id.DestWallet) {  //Wallet Page
                         startActivity(new Intent(HomeActivity.this, WalletActivity.class));
                         return true;
-                    } else if (item.getItemId() == R.id.DestOffer) {
+                    } else if (item.getItemId() == R.id.DestOffer) {  //Offer Page
                         startActivity(new Intent(HomeActivity.this, RewardMainPage.class));
                         return true;
-                    } else if (item.getItemId() == R.id.DestProfile) {
+                    } else if (item.getItemId() == R.id.DestProfile) {  //Profile Page
                         startActivity(new Intent(HomeActivity.this, profilepage.class));
                         return true;
                     }
@@ -133,7 +133,6 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
             drawerLayout.closeDrawer(GravityCompat.START);
         }
     }
-
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
