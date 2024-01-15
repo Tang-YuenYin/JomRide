@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/DestHome"
+        android:title="Home"
+        android:icon="@drawable/home" />
+    <item
+        android:id="@+id/DestShop"
+        android:icon="@drawable/shop"
+        android:title="Shop"/>
+    <item
+        android:id="@+id/DestWallet"
+        android:title="Wallet"
+        android:icon="@drawable/wallet" />
+    <item
+        android:id="@+id/DestOffer"
+        android:title="Offer"
+        android:icon="@drawable/offer" />
+    <item
+        android:id="@+id/DestProfile"
+        android:title="Profile"
+        android:icon="@drawable/profile" />
+</menu>

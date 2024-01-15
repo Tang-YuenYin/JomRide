@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_reward"
+        android:icon="@drawable/gift"
+        android:title="Reward" />
+
+    <item
+        android:id="@+id/nav_membership"
+        android:icon="@drawable/membership"
+        android:title="Membership" />
+
+    <item
+        android:id="@+id/nav_cashback"
+        android:icon="@drawable/cashback"
+        android:title="Cashback" />
+</menu>

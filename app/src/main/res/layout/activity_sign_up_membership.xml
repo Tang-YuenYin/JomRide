@@ -19,21 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/back"
-        android:layout_width="98dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="4dp"
-        android:background="@android:color/transparent"
-        android:textAllCaps="false"
-        android:text="Back"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        android:onClick="Back"
-        app:layout_constraintEnd_toStartOf="@+id/membership"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/membership"
         android:layout_width="wrap_content"
@@ -41,6 +26,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="148dp"
         android:text="Membership"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,13 +57,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/birthday"
+    <TextView
+        android:id="@+id/datePickerButton"
         android:layout_width="277dp"
         android:layout_height="53dp"
         android:layout_marginTop="240dp"
         android:background="#D8FFFB"
         android:ems="10"
+        android:textSize="25sp"
         android:hint="  Birthday"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
@@ -127,7 +114,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="Submit"
+        android:id="@+id/Submit"
         android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
