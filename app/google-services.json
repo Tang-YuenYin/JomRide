@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "263333378754",
+    "firebase_url": "https://jomrideapp-default-rtdb.firebaseio.com",
+    "project_id": "jomrideapp",
+    "storage_bucket": "jomrideapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263333378754:android:c8dc638df1f339f808d95b",
+        "android_client_info": {
+          "package_name": "com.example.bikehailing"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDlXGvrEnXv3Towl3-f3aP0O-DDBRO8bk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263333378754:android:786c7089a42b0fb208d95b",
+        "android_client_info": {
+          "package_name": "com.example.jom_ride"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDlXGvrEnXv3Towl3-f3aP0O-DDBRO8bk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263333378754:android:2b4865aa743594e408d95b",
+        "android_client_info": {
+          "package_name": "com.example.jomride"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDlXGvrEnXv3Towl3-f3aP0O-DDBRO8bk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263333378754:android:f0c392506c2fc25608d95b",
+        "android_client_info": {
+          "package_name": "com.example.jomrideapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDlXGvrEnXv3Towl3-f3aP0O-DDBRO8bk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263333378754:android:c69eab4c0f90bbf608d95b",
+        "android_client_info": {
+          "package_name": "com.example.rewardmainpage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDlXGvrEnXv3Towl3-f3aP0O-DDBRO8bk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
