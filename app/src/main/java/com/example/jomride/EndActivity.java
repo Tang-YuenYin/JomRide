@@ -29,11 +29,11 @@ public class EndActivity extends AppCompatActivity {
 
         double totalPrice = getIntent().getDoubleExtra("TotalPrice", 0.0);
         TextView TVPrice = findViewById(R.id.TV_Atotal);
-        TVPrice.setText("Total Price: RM " + String.format("%.2f", totalPrice));
+        TVPrice.setText(String.format("%.2f", totalPrice));
 
         String vehicleType = getIntent().getStringExtra("VehicleType");
         TextView TVTransport = findViewById(R.id.TV_Ainput_tranport);
-        TVTransport.setText("Vehicle Type: "+vehicleType);
+        TVTransport.setText(vehicleType);
 
         String dateTime = getCurrentDateTime();
         TextView TVDateTime = findViewById(R.id.TV_ADateTime);
@@ -41,15 +41,15 @@ public class EndActivity extends AppCompatActivity {
 
         long timeElapsed = getIntent().getLongExtra("TimeElapsed",0);
         TextView TVElapsedTime = findViewById(R.id.TV_Ainput_duration);
-        TVElapsedTime.setText("Duration: "+timeElapsed+" (seconds)");
+        TVElapsedTime.setText(timeElapsed+" (seconds)");
 
         double ratePerMinute = getIntent().getDoubleExtra("RatePerMinute",0.0);
         TextView TVRate = findViewById(R.id.TV_Ainput_rate);
-        TVRate.setText("Rate: RM"+ratePerMinute+"0 /min");
+        TVRate.setText("RM"+ratePerMinute+"0 /min");
 
         String message = getIntent().getStringExtra("Destination");
         TextView TVStartPoint = findViewById(R.id.TV_Ainput_start);
-        TVStartPoint.setText("Start Point: "+message);
+        TVStartPoint.setText(message);
 
         Button BtnOk = findViewById(R.id.Btn_AProceed);
         BtnOk.setOnClickListener(new View.OnClickListener() {
