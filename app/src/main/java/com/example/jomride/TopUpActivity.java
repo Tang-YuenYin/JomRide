@@ -103,7 +103,8 @@ public class TopUpActivity extends AppCompatActivity {
         ETamount=findViewById(R.id.ETND_amount);
         Btntopup=findViewById(R.id.BtnTopUp);
         Button BtnComfirm=findViewById(R.id.Btn_Comfirm);
-        Btntopup.setEnabled(false);;
+        Btntopup.setEnabled(false);
+        Btntopup.setVisibility(View.INVISIBLE);
 
         PaymentConfiguration.init(this, Publishablekey);
         paymentSheet = new PaymentSheet(this, result -> {
@@ -114,7 +115,8 @@ public class TopUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ETamount.getText().clear();
-                Btntopup.setEnabled(false);;
+                Btntopup.setEnabled(false);
+                Btntopup.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -140,6 +142,7 @@ public class TopUpActivity extends AppCompatActivity {
                                                       TPamount = String.format("%d", Iamount );
                                                       getCustomerId();
                                                       Btntopup.setEnabled(true);
+                                                      Btntopup.setVisibility(View.VISIBLE);
                                                   }
                                                   else{
                                                       ETamount.getText().clear();
