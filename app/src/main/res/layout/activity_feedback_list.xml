@@ -10,6 +10,25 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".FeedbackListActivity">
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    <ImageView
+        android:id="@+id/background5"
+        android:layout_width="413dp"
+        android:layout_height="728dp"
+        android:alpha="0.3"
+        android:background="#ffffff"
+        android:scaleType="fitCenter"
+        android:src="@drawable/backgroundjomride"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+>>>>>>> JomRide/master
+>>>>>>> JomRide/master
     <ImageButton
         android:id="@+id/imageButton4"
         android:layout_width="56dp"
@@ -25,6 +44,10 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewFeedback"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> JomRide/master
         android:layout_width="289dp"
         android:layout_height="525dp"
         android:layout_alignParentStart="true"
@@ -33,12 +56,29 @@
         android:layout_marginStart="53dp"
         android:layout_marginTop="144dp"
         android:layout_marginEnd="69dp"
+<<<<<<< HEAD
+=======
+=======
+        android:layout_width="356dp"
+        android:layout_height="528dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="12dp"
+>>>>>>> JomRide/master
+>>>>>>> JomRide/master
         android:scrollbars="vertical" />
 
     <LinearLayout
         android:id="@+id/ratingButtonsLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> JomRide/master
         android:orientation="horizontal"
         android:layout_below="@+id/recyclerViewFeedback"
         android:layout_centerHorizontal="true"
@@ -46,6 +86,21 @@
         <!-- Buttons for each rating will be added dynamically here -->
     </LinearLayout>
 
+<<<<<<< HEAD
+=======
+=======
+        android:layout_below="@+id/recyclerViewFeedback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/verDarkCyan"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+        <!-- Buttons for each rating will be added dynamically here -->
+    </LinearLayout>
+
+
+>>>>>>> JomRide/master
+>>>>>>> JomRide/master
     <Button
         android:id="@+id/btnDisplayAll"
         android:layout_width="130dp"
@@ -53,6 +108,10 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> JomRide/master
         android:layout_marginStart="40dp"
         android:layout_marginTop="84dp"
         android:layout_marginEnd="240dp"
@@ -64,16 +123,50 @@
         android:id="@+id/TVListTitle"
         android:textColor="@color/black"
         android:layout_width="wrap_content"
+<<<<<<< HEAD
+=======
+=======
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="237dp"
+        android:background="@drawable/custom_button2"
+        android:backgroundTint="#175E5F"
+        android:text="Display All"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/TVListTitle"
+        android:layout_width="226dp"
+>>>>>>> JomRide/master
+>>>>>>> JomRide/master
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> JomRide/master
         android:layout_marginStart="117dp"
         android:layout_marginTop="31dp"
         android:layout_marginEnd="123dp"
         android:layout_marginBottom="673dp"
         android:text="Rating and Review"
+<<<<<<< HEAD
+=======
+=======
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="610dp"
+        android:drawableLeft="@drawable/ic_ratinghistory"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/inter"
+        android:text="Rating and Review"
+        android:textColor="@color/black"
+>>>>>>> JomRide/master
+>>>>>>> JomRide/master
         android:textSize="20sp"
         android:textStyle="bold" />
 
