@@ -29,7 +29,7 @@ public class EndActivity extends AppCompatActivity {
 
         double totalPrice = getIntent().getDoubleExtra("TotalPrice", 0.0);
         TextView TVPrice = findViewById(R.id.TV_Atotal);
-        TVPrice.setText(String.format("%.2f", totalPrice));
+        TVPrice.setText("RM "+String.format("%.2f", totalPrice));
 
         String vehicleType = getIntent().getStringExtra("VehicleType");
         TextView TVTransport = findViewById(R.id.TV_Ainput_tranport);
