@@ -233,6 +233,7 @@
             android:id="@+id/Btn_Exit_receipt"
             android:layout_width="match_parent"
             android:layout_height="49dp"
+            android:background="@drawable/custom_button2"
             android:fontFamily="@font/inter"
             android:text="@string/popup_exitreceipt"
             android:textColor="@color/white"
