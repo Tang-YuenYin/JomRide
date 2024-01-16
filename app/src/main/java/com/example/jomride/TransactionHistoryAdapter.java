@@ -59,7 +59,7 @@ public class TransactionHistoryAdapter extends RecyclerView.Adapter<TransactionH
 
     @Override
     public int getItemCount() {
-        if(historyObjectList.size()<30)
+        if(historyObjectList.size()<50)
             return historyObjectList.size();
         else
             return 30;

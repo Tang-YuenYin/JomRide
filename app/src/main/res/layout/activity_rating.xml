@@ -6,124 +6,148 @@
     android:layout_height="match_parent"
     tools:context=".FeedbackActivity">
 
-    <RatingBar
-        android:id="@+id/RatingBarFeedback"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:progressTint="#FFEB3B"
+    <ImageView
+        android:id="@+id/background7"
+        android:layout_width="413dp"
+        android:layout_height="728dp"
+        android:alpha="0.3"
+        android:background="#ffffff"
+        android:scaleType="fitCenter"
+        android:src="@drawable/backgroundjomride"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="363dp"
+        android:layout_height="289dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="26dp"
+        android:background="@drawable/popup"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:paddingStart="5dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/background7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background7"
+        app:layout_constraintVertical_bias="0.394">
+
+        <TextView
+            android:id="@+id/TVFeedbackSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="How was your overall experience?"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/RatingBarFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:progressTint="#FFEB3B" />
+
+        <TextView
+            android:id="@+id/TVRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingBottom="10dp"
+            android:text="Your have rated "
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/TVFeedbackShare"
+            android:layout_width="121dp"
+            android:layout_height="58dp"
+            android:paddingStart="10dp"
+            android:paddingTop="20dp"
+            android:text="Tell us more "
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ETFeedback"
+            android:layout_width="257dp"
+            android:layout_height="71dp"
+            android:backgroundTint="#175E5F"
+            android:backgroundTintMode="src_atop"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Write your feedback here"
+            android:inputType="textMultiLine"
+            android:paddingStart="10dp"
+            android:textIsSelectable="false"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BtnSkip"
+        android:layout_width="109dp"
+        android:layout_height="49dp"
+        android:background="@drawable/custom_button2"
+        android:backgroundTint="#175E5F"
+        android:clickable="true"
+        android:fontFamily="@font/inter"
+        android:foregroundTint="#175E5F"
+        android:text="SKIP"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.287" />
+        app:layout_constraintVertical_bias="0.737" />
+
+    <Button
+        android:id="@+id/BtnFeedback"
+        android:layout_width="100dp"
+        android:layout_height="49dp"
+        android:background="@drawable/custom_button2"
+        android:backgroundTint="#175E5F"
+        android:clickable="true"
+        android:fontFamily="@font/inter"
+        android:text="SUBMIT"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.737" />
 
     <TextView
         android:id="@+id/TVFeedbackTitle"
-        android:layout_width="310dp"
-        android:layout_height="87dp"
+        android:layout_width="304dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="62dp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
         android:text="Your Opinion matters to Us!"
         android:textAllCaps="false"
         android:textColor="#99175E5F"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.094" />
-
-    <TextView
-        android:id="@+id/TVFeedbackSubtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="How was your overall experience?"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.197"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.224" />
-
-    <TextView
-        android:id="@+id/TVRating"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Your have rated "
-        android:textColor="#000000"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.111"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.341" />
-
-    <EditText
-        android:id="@+id/ETFeedback"
-        android:layout_width="257dp"
-        android:layout_height="71dp"
-        android:backgroundTint="#175E5F"
-        android:backgroundTintMode="src_atop"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="Write your feedback here"
-        android:inputType="textMultiLine"
-        android:textIsSelectable="false"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.22"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.489" />
-
-    <TextView
-        android:id="@+id/TVFeedbackShare"
-        android:layout_width="109dp"
-        android:layout_height="34dp"
-        android:text="Tell us more "
-        android:textColor="#000000"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.119"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.414" />
-
-    <Button
-        android:id="@+id/BtnSkip"
-        android:layout_width="99dp"
-        android:layout_height="52dp"
-        android:backgroundTint="#175E5F"
-        android:clickable="true"
-        android:foregroundTint="#175E5F"
-        android:text="SKIP"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.115"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.627" />
-
-    <Button
-        android:id="@+id/BtnFeedback"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#175E5F"
-        android:clickable="true"
-        android:text="SUBMIT"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.881"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.629" />
+        app:layout_constraintTop_toTopOf="@+id/background7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

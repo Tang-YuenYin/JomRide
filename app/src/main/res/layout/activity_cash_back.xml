@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".CashBack">
 
+    <ImageView
+        android:id="@+id/background5"
+        android:layout_width="413dp"
+        android:layout_height="728dp"
+        android:alpha="0.3"
+        android:background="#ffffff"
+        android:scaleType="fitCenter"
+        android:src="@drawable/backgroundjomride"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="56dp"
@@ -21,19 +34,29 @@
 
     <TextView
         android:id="@+id/back2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="172dp"
+        android:layout_width="154dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="92dp"
+        android:fontFamily="@font/inter"
         android:text="Cashback"
         android:textColor="@color/black"
         android:textSize="20sp"
+
+
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-
-
-
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="35dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/back2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_cashback" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -49,10 +72,10 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="369dp"
-        android:layout_height="584dp"
+        android:layout_width="379dp"
+        android:layout_height="558dp"
         android:layout_centerInParent="true"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="124dp"
         android:scrollbars="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -23,20 +23,23 @@
         android:id="@+id/membership"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="148dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="132dp"
+        android:drawableStart="@drawable/ic_crowb"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/inter"
         android:text="Membership"
         android:textColor="@color/black"
-        android:textStyle="bold"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/view"
-        android:layout_width="414dp"
-        android:layout_height="261dp"
-        android:layout_marginTop="92dp"
+        android:layout_width="417dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="120dp"
         android:background="#175E5F "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -48,6 +51,7 @@
         android:layout_marginTop="28dp"
         android:layout_marginEnd="100dp"
         android:background="#00FFFFFF"
+        android:fontFamily="@font/inter"
         android:text="Sign up as
         member to enjoy
         more exclusive offers!"
@@ -58,15 +62,17 @@
 
     <Button
         android:id="@+id/signUpButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="106dp"
+        android:layout_height="48dp"
         android:layout_marginTop="188dp"
         android:layout_marginEnd="156dp"
         android:background="@drawable/ellipse_shape"
+        android:fontFamily="@font/inter"
         android:onClick="SignUp"
         android:text="Sign Up "
         android:textAllCaps="false"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view" />
 
@@ -77,6 +83,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="12dp"
         android:background="#00FFFFFF"
+        android:fontFamily="@font/inter"
         android:text="Become a member to enjoy..."
         android:textColor="#175E5F"
         android:textSize="25sp"
@@ -138,7 +145,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="448dp"
-        android:layout_marginEnd="104dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="@font/inter"
         android:text="members-only discounts and offers"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -149,6 +157,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="496dp"
         android:layout_marginEnd="184dp"
+        android:fontFamily="@font/inter"
         android:text="Better user experience"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -159,6 +168,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="540dp"
         android:layout_marginEnd="132dp"
+        android:fontFamily="@font/inter"
         android:text="Faster and Easier Transactions"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -169,19 +179,21 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="616dp"
         android:layout_marginEnd="176dp"
+        android:fontFamily="@font/inter"
         android:text="early access to updates"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="580dp"
-        android:layout_marginEnd="184dp"
+        android:layout_marginEnd="188dp"
+        android:fontFamily="@font/inter"
         android:text="Customization options"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
