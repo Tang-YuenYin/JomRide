@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/jomridelogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/jomridelogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JomRideApp"
+        tools:targetApi="34">
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".ClipActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HelmetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SunglassesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profilepage"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".editprofile"
+            android:exported="false" />
+        <activity
+            android:name=".LocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BicycleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScooterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BikepoolActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TransportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaySuccessful"
+            android:exported="false" />
+        <activity
+            android:name=".PayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ArmbandActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UnlockedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EndActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CountingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DisabledActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".YourInformation"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TopUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WalletActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ArmbandRewardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CashBack"
+            android:exported="false" />
+        <activity
+            android:name=".Discount10DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Discount25Details"
+            android:exported="false" />
+
+        <activity
+            android:name=".ZusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Membership"
+            android:exported="false" />
+
+        <activity
+            android:name=".Rent1free1"
+            android:exported="false" />
+
+        <activity
+            android:name=".SignUpMembership"
+            android:exported="false" />
+        <activity
+            android:name=".SkirtclipActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TealiveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WatsonsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RewardMainPage"
+            android:exported="false" />
+        <activity
+            android:name=".StartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key"/>
+    </application>
+
+</manifest>

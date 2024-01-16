@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TransportActivity">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="back button"
+        android:src="@drawable/back_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="72dp"
+        android:alpha="0.2"
+        android:scaleType="fitCenter"
+        android:src="@drawable/baseline_location_on_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="410dp"
+        android:layout_height="917dp"
+        android:alpha="0.3"
+        android:background="#ffffff"
+        android:scaleType="fitCenter"
+        android:src="@drawable/backgroundjomride"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3f51b5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <TextView
+        android:id="@+id/TVTransport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="Select Your Transport"
+        android:textColor="#3f51b5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bicycle"
+        android:layout_width="169dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/border"
+        android:contentDescription="bicycle"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bicycle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TVTransport" />
+
+    <TextView
+        android:id="@+id/TVBicycle"
+        android:layout_width="105dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button2"
+        android:text="    Bicycle"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bicycle" />
+
+    <ImageButton
+        android:id="@+id/disabledBike"
+        android:layout_width="175dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="disabled bike"
+        android:background="@drawable/border"
+        android:scaleType="fitCenter"
+        android:src="@drawable/disabled"
+        app:layout_constraintStart_toEndOf="@id/bicycle"
+        app:layout_constraintTop_toBottomOf="@id/TVTransport" />
+
+    <TextView
+        android:id="@+id/TVDisabled"
+        android:layout_width="155dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button2"
+        android:text="    Disabled Bike"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/TVBicycle"
+        app:layout_constraintTop_toBottomOf="@id/disabledBike" />
+
+    <ImageButton
+        android:id="@+id/scooter"
+        android:layout_width="166dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="scooter"
+        android:background="@drawable/border"
+        android:scaleType="fitCenter"
+        android:src="@drawable/scooter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TVBicycle" />
+
+    <TextView
+        android:id="@+id/TVScooter"
+        android:layout_width="105dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_button2"
+        android:text="    Scooter"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scooter" />
+
+    <ImageButton
+        android:id="@+id/carpool"
+        android:layout_width="170dp"
+        android:layout_height="158dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/border"
+        android:contentDescription="carpool"
+        android:scaleType="fitCenter"
+        android:src="@drawable/carpool"
+        app:layout_constraintStart_toEndOf="@id/scooter"
+        app:layout_constraintTop_toBottomOf="@id/TVDisabled" />
+
+    <TextView
+        android:id="@+id/TVPooling"
+        android:layout_width="151dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_button2"
+        android:text="    Bike Pooling"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/TVScooter"
+        app:layout_constraintTop_toBottomOf="@id/carpool" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
