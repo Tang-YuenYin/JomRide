@@ -18,40 +18,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/review"
-        android:layout_width="100dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="7dp"
-        android:background="@android:color/transparent"
-        android:text="Review"
-        android:textAllCaps="false"
-        android:textColor="#2335DD"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/BtnRent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVPrice"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/bicycle"
-        android:layout_width="219dp"
-        android:layout_height="194dp"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/border"
-        android:scaleType="fitCenter"
-        android:src="@drawable/bicycle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/TVBrand"
         android:layout_width="327dp"
         android:layout_height="52dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/custom_button2"
+        android:fontFamily="@font/inter"
         android:text="\nBrand: 24 INCH HARD BMX BIKE BICYCLE"
         android:textAlignment="center"
         android:textAllCaps="false"
@@ -62,28 +35,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/bicycle" />
 
-    <TextView
-        android:id="@+id/TVStock"
-        android:layout_width="231dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/custom_button2"
-        android:text="\nStock: 5"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="#C4C4C4"
-        android:textSize="18dp"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/bicycle"
+        android:layout_width="219dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/border"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bicycle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/TVBrand" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/TVPrice"
         android:layout_width="296dp"
         android:layout_height="64dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/custom_button2"
+        android:fontFamily="@font/inter"
         android:text="\nPrice: RM0.40 per minute"
         android:textAlignment="center"
         android:textAllCaps="false"
@@ -91,20 +61,60 @@
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.591"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/TVStock" />
+
+    <Button
+        android:id="@+id/review"
+        android:layout_width="100dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="7dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/inter"
+        android:text="Review"
+        android:textAllCaps="false"
+        android:textColor="#2335DD"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/BtnRent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVPrice"
+        app:layout_constraintVertical_bias="0.375" />
 
     <Button
         android:id="@+id/BtnRent"
         android:layout_width="117dp"
         android:layout_height="48dp"
         android:layout_marginTop="71dp"
-        android:background="#EFDE43"
+        android:background="@drawable/ellipse_shape"
+        android:fontFamily="@font/inter"
         android:text="Rent Now!!!"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TVPrice"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/TVStock"
+        android:layout_width="237dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button2"
+        android:fontFamily="@font/inter"
+        android:text="\nStock: 5"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#C4C4C4"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TVBrand" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

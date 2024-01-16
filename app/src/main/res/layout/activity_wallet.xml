@@ -24,6 +24,19 @@
     <!--        app:layout_constraintStart_toStartOf="parent"-->
     <!--        app:layout_constraintTop_toBottomOf="@+id/TV_walletReminder" />-->
 
+    <ImageView
+        android:id="@+id/background6"
+        android:layout_width="413dp"
+        android:layout_height="728dp"
+        android:alpha="0.3"
+        android:background="#ffffff"
+        android:scaleType="fitCenter"
+        android:src="@drawable/backgroundjomride"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:id="@+id/BtnBack_WalletHome"
         android:layout_width="56dp"
@@ -36,26 +49,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/TV_walletReminder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="50dp"
-        android:fontFamily="@font/inter"
-        android:text="@string/reminder_wallet"
-        android:textColor="@color/Red"
-        android:textSize="13sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.625"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LL_Wallet" />
-
     <LinearLayout
         android:id="@+id/LL_Wallet"
-        android:layout_width="351dp"
-        android:layout_height="253dp"
+        android:layout_width="354dp"
+        android:layout_height="277dp"
         android:background="@drawable/popup"
         android:orientation="vertical"
         android:paddingStart="45dp"
@@ -129,10 +126,21 @@
             style="@style/Widget.AppCompat.Button"
             android:layout_width="142dp"
             android:layout_height="62dp"
+            android:background="@drawable/custom_button2"
             android:fontFamily="@font/inter"
             android:text="@string/top_up_wallet"
+            android:textColor="@color/colorWhite"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TV_walletReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="@string/reminder_wallet"
+            android:textColor="@color/Red"
+            android:textSize="13sp" />
 
     </LinearLayout>
 
@@ -140,7 +148,7 @@
         android:id="@+id/TV_title_wallet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="108dp"
         android:drawableLeft="@drawable/ic_wallet"
         android:drawablePadding="10dp"
         android:fontFamily="@font/inter"
@@ -154,25 +162,26 @@
 
     <Button
         android:id="@+id/Btn_History"
-        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="234dp"
         android:layout_height="82dp"
         android:layout_marginStart="161dp"
-        android:layout_marginTop="140dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/popup"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_button2"
+        android:drawableEnd="@drawable/arrow_forward"
+        android:drawablePadding="5dp"
         android:fontFamily="@font/inter"
+        android:padding="5dp"
         android:text="@string/walltehistorybuttonlabel"
         android:textAlignment="textEnd"
-        android:textColor="@color/black"
+        android:textColor="@color/colorWhite"
         android:textSize="20sp"
-        app:icon="@drawable/ic_next"
         app:iconGravity="end"
-        app:iconPadding="5dp"
         app:iconSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TV_walletReminder" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
