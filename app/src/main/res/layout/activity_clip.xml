@@ -44,6 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/inter"
         android:text="RM 2.90"
         android:textColor="#F01111"
         android:textSize="30sp"

@@ -12,8 +12,8 @@
         android:title="Shop"/>
     <item
         android:id="@+id/DestWallet"
-        android:title="Wallet"
-        android:icon="@drawable/wallet" />
+        android:icon="@drawable/ic_wallet"
+        android:title="Wallet" />
     <item
         android:id="@+id/DestOffer"
         android:title="Offer"
