@@ -38,6 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="108dp"
+        android:fontFamily="@font/inter"
         android:text="Select Your Pick Up Point"
         android:textColor="#3f51b5"
         android:textSize="24sp"
@@ -75,8 +76,10 @@
         android:layout_marginStart="252dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/custom_button2"
+        android:fontFamily="@font/inter"
         android:text="Submit"
         android:textColor="#ffffff"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/DDLDestination" />
 

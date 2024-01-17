@@ -135,17 +135,11 @@
             android:textAlignment="viewStart"
             android:textSize="18sp" />
 
-        <View
-            android:id="@+id/Hline2"
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:background="@color/verDarkCyan"
-            android:paddingTop="10dp" />
-
         <Button
             android:id="@+id/Btn_HOk"
             android:layout_width="match_parent"
             android:layout_height="49dp"
+            android:background="@drawable/custom_button2"
             android:fontFamily="@font/inter"
             android:text="@string/popup_exitreceipt"
             android:textColor="@color/white"

@@ -11,11 +11,12 @@
         android:id="@+id/TVTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/inter"
         android:text="Are You Sure To End Your Way?"
         android:textColor="#000000"
-        android:textSize="22sp" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/BtnYes"
@@ -27,9 +28,11 @@
         android:layout_marginStart="135dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="127dp"
+        android:background="@drawable/custom_button2"
+        android:fontFamily="@font/inter"
         android:text="YES"
         android:textColor="@color/white"
-        android:background="@drawable/custom_button2"/>
+        android:textStyle="bold" />
 
 
 </RelativeLayout>

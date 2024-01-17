@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".RewardMainPage">
 
+    <ImageView
+        android:id="@+id/background10"
+        android:layout_width="413dp"
+        android:layout_height="728dp"
+        android:alpha="0.3"
+        android:background="#ffffff"
+        android:scaleType="fitCenter"
+        android:src="@drawable/backgroundjomride"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="56dp"
@@ -23,19 +36,23 @@
         android:id="@+id/back2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="172dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="156dp"
+        android:drawableStart="@drawable/ic_gift"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/inter"
         android:text="Reward"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <View
         android:id="@+id/view2"
-        android:layout_width="417dp"
-        android:layout_height="127dp"
-        android:layout_marginTop="88dp"
+        android:layout_width="416dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="135dp"
         android:background="#175E5F "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -44,7 +61,8 @@
         android:id="@+id/totalPoints"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/inter"
         android:text="129 points"
         android:textColor="#ffffff"
         android:textSize="30sp"
@@ -56,7 +74,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="105dp"
+        android:fontFamily="@font/inter"
         android:text="Offers"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -68,7 +87,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/inter"
         android:text="Products"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -79,7 +99,7 @@
         android:id="@+id/horizontalScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="65dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2">
 
@@ -105,9 +125,10 @@
                     <TextView
                         android:layout_width="137dp"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
                         android:text="*membership required"
                         android:textColor="#F01111"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp" />
 
                     <ImageView
                         android:layout_width="100dp"
@@ -118,12 +139,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
                         android:text="1 week"
                         android:textColor="#F01111" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
                         android:text="*100 points"
                         android:textColor="#2335DD" />
 
@@ -149,9 +172,10 @@
                     <TextView
                         android:layout_width="137dp"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
                         android:text="*membership required"
                         android:textColor="#F01111"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp" />
 
                     <ImageView
                         android:layout_width="100dp"
@@ -162,12 +186,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
                         android:text="1 week"
                         android:textColor="#F01111" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
                         android:text="*100 points"
                         android:textColor="#2335DD" />
 
@@ -200,6 +226,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="27dp"
+                        android:fontFamily="@font/inter"
                         android:text="*1000 points"
                         android:textColor="#2335DD" />
 
@@ -336,7 +363,7 @@
         android:id="@+id/horizontalScrollView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="65dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
 
@@ -369,6 +396,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
+                        android:fontFamily="@font/inter"
                         android:text="*500 points"
                         android:textColor="#2335DD" />
 
@@ -401,6 +429,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
+                        android:fontFamily="@font/inter"
                         android:text="*400 points"
                         android:textColor="#2335DD" />
 
@@ -426,6 +455,7 @@
                     <TextView
                         android:layout_width="137dp"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
                         android:text="*membership required"
                         android:textColor="#F01111"
                         android:textSize="10sp" />
@@ -440,6 +470,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
+                        android:fontFamily="@font/inter"
                         android:text="*3000 points"
                         android:textColor="#2335DD" />
 
