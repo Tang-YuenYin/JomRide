@@ -9,6 +9,7 @@
     tools:context=".HomeActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Home"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <fragment
@@ -32,13 +33,8 @@
             android:id="@+id/menu"
             android:layout_width="48dp"
             android:layout_height="48dp"
-<<<<<<< HEAD
             android:layout_marginStart="16dp"
             android:layout_marginTop="56dp"
-=======
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="44dp"
->>>>>>> JomRide/master
             android:background="@drawable/custom_button2"
             android:contentDescription="menu"
             android:src="@drawable/menu"
@@ -49,20 +45,12 @@
             android:id="@+id/TVCurrent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
             android:layout_marginTop="60dp"
-=======
-            android:layout_marginTop="56dp"
->>>>>>> JomRide/master
             android:text="Your Current Location"
             android:textColor="#ffffff"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-<<<<<<< HEAD
-=======
-            app:layout_constraintHorizontal_bias="0.62"
->>>>>>> JomRide/master
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -70,11 +58,7 @@
             android:id="@+id/search"
             android:layout_width="44dp"
             android:layout_height="49dp"
-<<<<<<< HEAD
             android:layout_marginStart="16dp"
-=======
-            android:layout_marginStart="44dp"
->>>>>>> JomRide/master
             android:layout_marginTop="108dp"
             android:src="@drawable/search"
             app:layout_constraintStart_toStartOf="parent"
@@ -84,11 +68,7 @@
             android:id="@+id/WhereToGo"
             android:layout_width="286dp"
             android:layout_height="48dp"
-<<<<<<< HEAD
             android:layout_marginTop="16dp"
-=======
-            android:layout_marginTop="20dp"
->>>>>>> JomRide/master
             android:background="@drawable/custom_button"
             android:text="\t\t\t\t\t\tWhere would you go?"
             android:textAlignment="textStart"
@@ -96,11 +76,7 @@
             android:textColor="#C4C4C4"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-<<<<<<< HEAD
             app:layout_constraintHorizontal_bias="0.496"
-=======
-            app:layout_constraintHorizontal_bias="0.704"
->>>>>>> JomRide/master
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/TVCurrent" />
 
@@ -108,9 +84,10 @@
             android:id="@+id/bottom_navigation"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:itemBackground="@color/white"
-            app:itemIconTint="@color/black"
-            app:itemTextColor="@color/black"
+            app:itemBackground="@color/verDarkCyan"
+            app:itemIconTint="@color/colorWhite"
+            app:itemTextColor="@color/colorWhite"
+            app:labelVisibilityMode="labeled"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
