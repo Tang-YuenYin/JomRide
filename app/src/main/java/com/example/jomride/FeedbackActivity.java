@@ -69,17 +69,22 @@ public class FeedbackActivity extends AppCompatActivity {
 
                 // Push the feedback object to Firebase
                 //get id
-                String UID_id=feedbackRef.push().getKey();
-                feedbackRef.child(UID_id).setValue(feedback);
+                if(rating > 0) {
+                    String UID_id = feedbackRef.push().getKey();
+                    feedbackRef.child(UID_id).setValue(feedback);
 
-                // Show a thank you message
-                String message = "Thank you for your feedback!";
-                if(!ETFeedback.getText().toString().isEmpty())
-                    message = message + "\nPlease enjoy your Cashback";
-                Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
-                Intent intent=new Intent( FeedbackActivity.this,HomeActivity.class);
-                startActivity(intent);
-                finish();
+                    // Show a thank you message
+                    String message = "Thank you for your feedback!";
+                    if (!ETFeedback.getText().toString().isEmpty())
+                        message = message + "\nPlease enjoy your Cashback";
+                    Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(FeedbackActivity.this, HomeActivity.class);
+                    startActivity(intent);
+                    finish();
+                }else{
+                    String message2 = "You haven't given any rating.";
+                    Toast.makeText(getApplicationContext(), message2, Toast.LENGTH_LONG).show();
+                }
             }
         });
 
